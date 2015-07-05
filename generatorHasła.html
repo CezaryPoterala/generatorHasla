@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Generator Hasła</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="generatorHasła.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Generator hasła</h2>
+  <p style=" padding-bottom: 10px;">Skrypty generuje losowe hasło z zakresu:</br>
+	ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+  </p>
+  <form class="form-inline" role="form">
+    <div class="form-group">
+      <label for="length">Długość:</label>
+		<input type="text"  class="form-control" id="length" placeholder="Wpisz długość hasła." onkeydown='block'>
+	</div>
+    <button type="button" class="btn btn-default" onclick="passworD()">Generuj hasło</button>
+  </form>
+  
+  <p id="result">Twoje hasło:</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="generatorHasła.js"></script>
+</body>
+</html>
